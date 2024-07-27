@@ -24,7 +24,7 @@ class Analyze:
     def connect_target_device(self):
             Record("tmp/tmp.wav",debug=False)
             val=is_Snap("tmp/tmp.wav")
-            if(val>0.15):
+            if(val>0.8):
                 print(val)
                 print("Snap detected!")
                 toggle_light()
